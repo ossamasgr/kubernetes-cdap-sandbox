@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cdap-sandbox
+  name: cdap
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cdap-sandbox
+  template:
+    metadata:
+      labels:
+        app: cdap-sandbox
+    spec:
+      containers:
+      - image: caskdata/cdap-sandbox:6.3.1
+        name: cdap
