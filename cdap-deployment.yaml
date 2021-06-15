@@ -15,5 +15,5 @@ spec:
         app: cdap-sandbox
     spec:
       containers:
-      - image: caskdata/cdap-sandbox:6.3.1
+      - image: caskdata/cdap-sandbox:6.4.1
         name: cdap
